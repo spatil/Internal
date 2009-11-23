@@ -1,0 +1,2 @@
+class DesignationsController < ApplicationController
+end

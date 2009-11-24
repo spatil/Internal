@@ -1,4 +1,4 @@
-class EmployeeGenerator < Rails::Generator::NamedBase
+class EmployeeMigrationGenerator < Rails::Generator::Base 
   def manifest
     record do |m|
       # m.directory "lib"

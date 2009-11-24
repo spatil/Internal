@@ -1,5 +1,6 @@
 # Include hook code here
-require 'employee'
+#require 'employee'
+ActionController::Base.send(:include, Employee)
 
 %w{ models controllers helpers }.each do |dir|
   path = File.join(File.dirname(__FILE__), 'app', dir)

@@ -8,6 +8,6 @@ class EmployeeGenerator < Rails::Generator::NamedBase
   end
 
   def file_name
-    "create_employee_managment"
+    "create_employee_management"
   end
 end

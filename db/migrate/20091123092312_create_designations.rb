@@ -3,7 +3,6 @@ class CreateDesignations < ActiveRecord::Migration
     create_table :designations do |t|
       t.string :name
       t.string :description
-
       t.timestamps
     end
   end

@@ -3,7 +3,6 @@ class CreateEmployeeDepartments < ActiveRecord::Migration
     create_table :employee_departments do |t|
       t.references :employee
       t.references :department
-
       t.timestamps
     end
   end

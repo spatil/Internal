@@ -30,7 +30,7 @@ class CreateEmployeeManagement < ActiveRecord::Migration
     end
 
     create_table :hierarchies do |t|
-      t.interger :employee_id
+      t.integer :employee_id
       t.integer :report_to # refer to the employee table
       t.string :description
 

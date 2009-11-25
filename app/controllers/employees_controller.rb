@@ -1,5 +1,5 @@
 class EmployeesController < ApplicationController
-  
+ 
   def index
   end
 
@@ -15,9 +15,14 @@ class EmployeesController < ApplicationController
   end
 
   def edit
+    @employee = Employee.find(params[:id])
   end
 
   def update
+    @employee = Employee.find(params[:id])
+    @employee.update_attributes(params[:employee])
+
+    redirect_to employees_path
   end
 
 end
